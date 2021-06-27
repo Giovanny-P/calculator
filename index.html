@@ -14,6 +14,30 @@
   <body>
     <div class="container">
       <h1>Calculator</h1>
+      <form id="form">
+        <div class="mb-3">
+          <label for="operatora">Operator A: </label>
+          <input
+            type="number"
+            class="form-control"
+            placeholder="Place operator A"
+            id="operatora"
+          />
+        </div>
+        <div class="mb-3">
+          <label for="operatorb">Operator B: </label>
+          <input
+            type="number"
+            class="form-control"
+            placeholder="Place operator B"
+            id="operatorb"
+          />
+        </div>
+      </form>
+      <button class="btn btn-primary mb-3" onclick="sum()">
+        Sum
+      </button>
+      <div id="result"></div>
     </div>
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
